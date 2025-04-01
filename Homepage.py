@@ -124,7 +124,7 @@ if st.session_state.logged_in:
     if st.sidebar.button("Logout"):
         st.session_state.logged_in = False
         st.success("Successfully logged out")
-        st.experimental_rerun()
+        st.rerun()
 else:
     login_or_signup = st.sidebar.selectbox(
             "Login/Sign Up",
