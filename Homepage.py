@@ -7,6 +7,8 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from login_register import login, signup
 import joblib
+import nltk
+nltk.download('punkt')
 
 # ============================== Chatbot ======================================
 
