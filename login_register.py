@@ -88,7 +88,7 @@ def signup():
                 
                 # Otomatis masuk pengguna setelah mendaftar
                 st.session_state['page'] = login
-                st.experimental_rerun()
+                st.rerun()
             except auth.EmailAlreadyExistsError:
                 st.error("Email sudah digunakan. Gunakan email lain.")
             except Exception as e:
