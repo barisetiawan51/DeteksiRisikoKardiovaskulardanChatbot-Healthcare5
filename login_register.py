@@ -61,7 +61,7 @@ def login():
                 else:
                     st.success("Berhasil masuk!")
                     st.session_state['logged_in'] = True
-                    st.experimental_rerun()
+                    st.rerun()
             except requests.exceptions.RequestException as e:
                 st.error(f"Terjadi kesalahan jaringan: {e}")
             except Exception as e:
