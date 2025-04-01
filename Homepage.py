@@ -311,5 +311,5 @@ elif selected == "Chatbot":
     if st.session_state.messages:
         if st.button("Clear Chat"):
             st.session_state.messages = []
-            st.experimental_rerun()
+            st.rerun()
 
